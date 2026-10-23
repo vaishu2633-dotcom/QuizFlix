@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.QuizFlix" parent="@style/Theme.Leanback" />
+</resources>

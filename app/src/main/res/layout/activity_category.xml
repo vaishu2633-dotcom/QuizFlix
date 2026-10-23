@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#0B1020">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIZFLIX"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#38BDF8"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Challenge"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- General Knowledge -->
+        <LinearLayout
+            android:id="@+id/btnGK"
+            android:layout_width="330dp"
+            android:layout_height="165dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_card_background"
+            android:focusable="true"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/img_gk"
+                android:scaleType="centerCrop"
+                android:contentDescription="General Knowledge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GENERAL KNOWLEDGE"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <!-- Computer Science -->
+        <LinearLayout
+            android:id="@+id/btnCS"
+            android:layout_width="330dp"
+            android:layout_height="165dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_card_background"
+            android:focusable="true"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/img_cs"
+                android:scaleType="centerCrop"
+                android:contentDescription="Computer Science"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPUTER SCIENCE"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <!-- Artificial Intelligence -->
+        <LinearLayout
+            android:id="@+id/btnAI"
+            android:layout_width="330dp"
+            android:layout_height="165dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_card_background"
+            android:focusable="true"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/img_ai"
+                android:scaleType="centerCrop"
+                android:contentDescription="Artificial Intelligence"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARTIFICIAL INTELLIGENCE"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <!-- Mixed Challenge -->
+        <LinearLayout
+            android:id="@+id/btnMixed"
+            android:layout_width="330dp"
+            android:layout_height="165dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/tv_card_background"
+            android:focusable="true"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/img_mixed"
+                android:scaleType="centerCrop"
+                android:contentDescription="Mixed Challenge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MIXED CHALLENGE"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use your TV remote to explore and select"
+        android:textColor="#94A3B8"
+        android:textSize="16sp"
+        android:layout_marginTop="18dp"/>
+
+</LinearLayout>

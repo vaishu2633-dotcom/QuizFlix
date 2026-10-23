@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Android TV Support -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <!-- TV Remote Navigation -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="QuizFlix"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizFlix">
+
+        <!-- HOME ACTIVITY - FIRST SCREEN -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:banner="@drawable/app_icon_your_company">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- CATEGORY SELECTION SCREEN -->
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+
+        <!-- QUIZ QUESTIONS AND RESULT SCREEN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+
+    </application>
+
+</manifest>
